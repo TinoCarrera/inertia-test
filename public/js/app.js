@@ -2133,13 +2133,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {
     title: {
-      "default": 'Confirm Password'
+      "default": 'Confirmar contraseña'
     },
     content: {
-      "default": 'For your security, please confirm your password to continue.'
+      "default": 'Por seguridad, confirma tu contraseña para continuar.'
     },
     button: {
-      "default": 'Confirm'
+      "default": 'Confirmar'
     }
   },
   components: {
@@ -3815,6 +3815,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Jetstream_ConfirmsPassword__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./../../Jetstream/ConfirmsPassword */ "./resources/js/Jetstream/ConfirmsPassword.vue");
 /* harmony import */ var _Jetstream_DangerButton__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./../../Jetstream/DangerButton */ "./resources/js/Jetstream/DangerButton.vue");
 /* harmony import */ var _Jetstream_SecondaryButton__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./../../Jetstream/SecondaryButton */ "./resources/js/Jetstream/SecondaryButton.vue");
+//
 //
 //
 //
@@ -24643,7 +24644,7 @@ var render = function() {
                     _c("jet-input", {
                       ref: "password",
                       staticClass: "mt-1 block w-3/4",
-                      attrs: { type: "password", placeholder: "Password" },
+                      attrs: { type: "password", placeholder: "Contraseña" },
                       nativeOn: {
                         keyup: function($event) {
                           if (
@@ -24694,7 +24695,7 @@ var render = function() {
                       }
                     }
                   },
-                  [_vm._v("\n                Nevermind\n            ")]
+                  [_vm._v("\n                Volver\n            ")]
                 ),
                 _vm._v(" "),
                 _c(
@@ -25860,7 +25861,7 @@ var render = function() {
                     },
                     [
                       _vm._v(
-                        "\n                            Dashboard\n                        "
+                        "\n                            Página principal\n                        "
                       )
                     ]
                   )
@@ -25917,7 +25918,7 @@ var render = function() {
                                 },
                                 [
                                   _vm._v(
-                                    "\n                                    Manage Account\n                                "
+                                    "\n                                    Administrar cuenta\n                                "
                                   )
                                 ]
                               ),
@@ -25927,7 +25928,7 @@ var render = function() {
                                 { attrs: { href: "/user/profile" } },
                                 [
                                   _vm._v(
-                                    "\n                                    Profile\n                                "
+                                    "\n                                    Perfil\n                                "
                                   )
                                 ]
                               ),
@@ -25938,7 +25939,7 @@ var render = function() {
                                     { attrs: { href: "/user/api-tokens" } },
                                     [
                                       _vm._v(
-                                        "\n                                    API Tokens\n                                "
+                                        "\n                                    Tokens API \n                                "
                                       )
                                     ]
                                   )
@@ -25958,7 +25959,7 @@ var render = function() {
                                       },
                                       [
                                         _vm._v(
-                                          "\n                                        Manage Team\n                                    "
+                                          "\n                                        Administrar grupos\n                                    "
                                         )
                                       ]
                                     ),
@@ -25974,7 +25975,7 @@ var render = function() {
                                       },
                                       [
                                         _vm._v(
-                                          "\n                                        Team Settings\n                                    "
+                                          "\n                                        Ajustes de grupo\n                                    "
                                         )
                                       ]
                                     ),
@@ -25985,7 +25986,7 @@ var render = function() {
                                           { attrs: { href: "/teams/create" } },
                                           [
                                             _vm._v(
-                                              "\n                                        Create New Team\n                                    "
+                                              "\n                                        Crear nuevo grupo\n                                    "
                                             )
                                           ]
                                         )
@@ -26003,7 +26004,7 @@ var render = function() {
                                       },
                                       [
                                         _vm._v(
-                                          "\n                                        Switch Teams\n                                    "
+                                          "\n                                        Cambiar grupo\n                                    "
                                         )
                                       ]
                                     ),
@@ -26102,7 +26103,7 @@ var render = function() {
                                     { attrs: { as: "button" } },
                                     [
                                       _vm._v(
-                                        "\n                                        Logout\n                                    "
+                                        "\n                                        Salir\n                                    "
                                       )
                                     ]
                                   )
@@ -26200,7 +26201,11 @@ var render = function() {
                       active: _vm.$page.currentRouteName == "dashboard"
                     }
                   },
-                  [_vm._v("\n                    Dashboard\n                ")]
+                  [
+                    _vm._v(
+                      "\n                    Página principal\n                "
+                    )
+                  ]
                 )
               ],
               1
@@ -26247,7 +26252,7 @@ var render = function() {
                     },
                     [
                       _vm._v(
-                        "\n                        Profile\n                    "
+                        "\n                        Perfil\n                    "
                       )
                     ]
                   ),
@@ -26264,7 +26269,7 @@ var render = function() {
                         },
                         [
                           _vm._v(
-                            "\n                        API Tokens\n                    "
+                            "\n                        Tokens API\n                    "
                           )
                         ]
                       )
@@ -26287,7 +26292,7 @@ var render = function() {
                         { attrs: { as: "button" } },
                         [
                           _vm._v(
-                            "\n                            Logout\n                        "
+                            "\n                            Salir\n                        "
                           )
                         ]
                       )
@@ -26306,7 +26311,7 @@ var render = function() {
                           },
                           [
                             _vm._v(
-                              "\n                            Manage Team\n                        "
+                              "\n                            Administrar grupos\n                        "
                             )
                           ]
                         ),
@@ -26321,7 +26326,7 @@ var render = function() {
                           },
                           [
                             _vm._v(
-                              "\n                            Team Settings\n                        "
+                              "\n                            Ajustes de grupo\n                        "
                             )
                           ]
                         ),
@@ -26337,7 +26342,7 @@ var render = function() {
                           },
                           [
                             _vm._v(
-                              "\n                            Create New Team\n                        "
+                              "\n                            Crear nuevo grupo\n                        "
                             )
                           ]
                         ),
@@ -26351,7 +26356,7 @@ var render = function() {
                           },
                           [
                             _vm._v(
-                              "\n                            Switch Teams\n                        "
+                              "\n                            Cambiar grupo\n                        "
                             )
                           ]
                         ),
@@ -27166,7 +27171,7 @@ var render = function() {
                   staticClass:
                     "font-semibold text-xl text-gray-800 leading-tight"
                 },
-                [_vm._v("\n            Dashboard\n        ")]
+                [_vm._v("\n            Página principal\n        ")]
               )
             ]
           },
@@ -27216,14 +27221,14 @@ var render = function() {
       {
         key: "title",
         fn: function() {
-          return [_vm._v("\n        Delete Account\n    ")]
+          return [_vm._v("\n        Eliminar cuenta\n    ")]
         },
         proxy: true
       },
       {
         key: "description",
         fn: function() {
-          return [_vm._v("\n        Permanently delete your account.\n    ")]
+          return [_vm._v("\n        Eliminar tu cuenta permanentemente.\n    ")]
         },
         proxy: true
       },
@@ -27233,7 +27238,7 @@ var render = function() {
           return [
             _c("div", { staticClass: "max-w-xl text-sm text-gray-600" }, [
               _vm._v(
-                "\n            Once your account is deleted, all of its resources and data will be permanently deleted. Before deleting your account, please download any data or information that you wish to retain.\n        "
+                "\n            Una vez eliminada la cuenta, todos los datos serán eliminados permanentemente. Antes de eliminarla, por favor guarda cualquier dato o información que quieras mantener.\n        "
               )
             ]),
             _vm._v(" "),
@@ -27250,7 +27255,7 @@ var render = function() {
                       }
                     }
                   },
-                  [_vm._v("\n                Delete Account\n            ")]
+                  [_vm._v("\n                Eliminar cuenta\n            ")]
                 )
               ],
               1
@@ -27268,7 +27273,7 @@ var render = function() {
                   key: "title",
                   fn: function() {
                     return [
-                      _vm._v("\n                Delete Account\n            ")
+                      _vm._v("\n                Eliminar cuenta\n            ")
                     ]
                   },
                   proxy: true
@@ -27278,7 +27283,7 @@ var render = function() {
                   fn: function() {
                     return [
                       _vm._v(
-                        "\n                Are you sure you want to delete your account? Once your account is deleted, all of its resources and data will be permanently deleted. Please enter your password to confirm you would like to permanently delete your account.\n\n                "
+                        "\n                ¿Estás seguro que quieres eliminar tu cuenta? Una vez eliminada la cuenta, todos los datos serán eliminados permanentemente. Por favor introduce tu contraseña para confirmar que quieres eliminar tu cuenta permanentemente.\n\n                "
                       ),
                       _c(
                         "div",
@@ -27343,7 +27348,7 @@ var render = function() {
                         },
                         [
                           _vm._v(
-                            "\n                    Nevermind\n                "
+                            "\n                    Volver\n                "
                           )
                         ]
                       ),
@@ -27362,7 +27367,7 @@ var render = function() {
                         },
                         [
                           _vm._v(
-                            "\n                    Delete Account\n                "
+                            "\n                    Eliminar cuenta\n                "
                           )
                         ]
                       )
@@ -27406,7 +27411,7 @@ var render = function() {
       {
         key: "title",
         fn: function() {
-          return [_vm._v("\n        Browser Sessions\n    ")]
+          return [_vm._v("\n        Sesiones\n    ")]
         },
         proxy: true
       },
@@ -27415,7 +27420,7 @@ var render = function() {
         fn: function() {
           return [
             _vm._v(
-              "\n        Manage and logout your active sessions on other browsers and devices.\n    "
+              "\n        Administrar y salir tus sesiones activas en otros navegadores y dispositivos.\n    "
             )
           ]
         },
@@ -27427,7 +27432,7 @@ var render = function() {
           return [
             _c("div", { staticClass: "max-w-xl text-sm text-gray-600" }, [
               _vm._v(
-                "\n            If necessary, you may logout of all of your other browser sessions across all of your devices. If you feel your account has been compromised, you should also update your password.\n        "
+                "\n            Si lo necesitas, puedes salir de todas las sesiones de tus dispositivos. Si sientes que tu cuenta no está segura, también puedes actualizar tu contraseña.\n        "
               )
             ]),
             _vm._v(" "),
@@ -27519,7 +27524,7 @@ var render = function() {
                                   {
                                     staticClass: "text-green-500 font-semibold"
                                   },
-                                  [_vm._v("This device")]
+                                  [_vm._v("Este dispositivo")]
                                 )
                               : _c("span", [
                                   _vm._v(
@@ -27550,7 +27555,7 @@ var render = function() {
                   },
                   [
                     _vm._v(
-                      "\n                Logout Other Browser Sessions\n            "
+                      "\n                Salir de todas las sesiones\n            "
                     )
                   ]
                 ),
@@ -27561,7 +27566,7 @@ var render = function() {
                     staticClass: "ml-3",
                     attrs: { on: _vm.form.recentlySuccessful }
                   },
-                  [_vm._v("\n                Done.\n            ")]
+                  [_vm._v("\n                Listo.\n            ")]
                 )
               ],
               1
@@ -27580,7 +27585,7 @@ var render = function() {
                   fn: function() {
                     return [
                       _vm._v(
-                        "\n                Logout Other Browser Sessions\n            "
+                        "\n                Salir de todas las sesiones\n            "
                       )
                     ]
                   },
@@ -27591,7 +27596,7 @@ var render = function() {
                   fn: function() {
                     return [
                       _vm._v(
-                        "\n                Please enter your password to confirm you would like to logout of your other browser sessions across all of your devices.\n\n                "
+                        "\n                Por favor introduce tu contraseña para confirmar que quieres salir de todas las sesiones de tus dispositivos.\n\n                "
                       ),
                       _c(
                         "div",
@@ -27602,7 +27607,7 @@ var render = function() {
                             staticClass: "mt-1 block w-3/4",
                             attrs: {
                               type: "password",
-                              placeholder: "Password"
+                              placeholder: "Contraseña"
                             },
                             nativeOn: {
                               keyup: function($event) {
@@ -27656,7 +27661,7 @@ var render = function() {
                         },
                         [
                           _vm._v(
-                            "\n                    Nevermind\n                "
+                            "\n                    Volver\n                "
                           )
                         ]
                       ),
@@ -27675,7 +27680,7 @@ var render = function() {
                         },
                         [
                           _vm._v(
-                            "\n                    Logout Other Browser Sessions\n                "
+                            "\n                    Salir de todas las sesiones\n                "
                           )
                         ]
                       )
@@ -27728,7 +27733,7 @@ var render = function() {
                   staticClass:
                     "font-semibold text-xl text-gray-800 leading-tight"
                 },
-                [_vm._v("\n            Profile\n        ")]
+                [_vm._v("\n            Perfil\n        ")]
               )
             ]
           },
@@ -27809,7 +27814,7 @@ var render = function() {
       {
         key: "title",
         fn: function() {
-          return [_vm._v("\n        Two Factor Authentication\n    ")]
+          return [_vm._v("\n        Autenticación de dos factores\n    ")]
         },
         proxy: true
       },
@@ -27818,7 +27823,7 @@ var render = function() {
         fn: function() {
           return [
             _vm._v(
-              "\n        Add additional security to your account using two factor authentication.\n    "
+              "\n        Añade seguridad adicional a tu cuenta mediante la autenticación de dos factores.\n\n    "
             )
           ]
         },
@@ -27831,19 +27836,19 @@ var render = function() {
             _vm.twoFactorEnabled
               ? _c("h3", { staticClass: "text-lg font-medium text-gray-900" }, [
                   _vm._v(
-                    "\n            You have enabled two factor authentication.\n        "
+                    "\n            Tienes habilitada la autenticación de dos factores.\n        "
                   )
                 ])
               : _c("h3", { staticClass: "text-lg font-medium text-gray-900" }, [
                   _vm._v(
-                    "\n            You have not enabled two factor authentication.\n        "
+                    "\n            No tienes habilitada la autenticación de dos factores.\n        "
                   )
                 ]),
             _vm._v(" "),
             _c("div", { staticClass: "mt-3 max-w-xl text-sm text-gray-600" }, [
               _c("p", [
                 _vm._v(
-                  "\n                When two factor authentication is enabled, you will be prompted for a secure, random token during authentication. You may retrieve this token from your phone's Google Authenticator application.\n            "
+                  "\n                Cuando la autenticación de dos factores esta habilitada, recibirás un token seguro de autenticación. Recibiras este token desde tu teléfono en la aplicación Google Authenticator. \n            "
                 )
               ])
             ]),
@@ -27860,7 +27865,7 @@ var render = function() {
                           [
                             _c("p", { staticClass: "font-semibold" }, [
                               _vm._v(
-                                "\n                        Two factor authentication is now enabled. Scan the following QR code using your phone's authenticator application.\n                    "
+                                "\n                        La autenticación de dos factores ahora está habilitada. Escanea el siguiente código QR usando la aplicación de tu teléfono Google Authenticator.\n                    "
                               )
                             ])
                           ]
@@ -27883,7 +27888,7 @@ var render = function() {
                           [
                             _c("p", { staticClass: "font-semibold" }, [
                               _vm._v(
-                                "\n                        Store these recovery codes in a secure password manager. They can be used to recover access to your account if your two factor authentication device is lost.\n                    "
+                                "\n                        Guarda esos códigos de recuperación en un lugar seguro. Pueden ser usados para acceder a tu cuenta si tu dispositivo se pierde.\n                    "
                               )
                             ])
                           ]
@@ -27930,7 +27935,7 @@ var render = function() {
                             },
                             [
                               _vm._v(
-                                "\n                        Enable\n                    "
+                                "\n                        Habilitar\n                    "
                               )
                             ]
                           )
@@ -27953,7 +27958,7 @@ var render = function() {
                                 { staticClass: "mr-3" },
                                 [
                                   _vm._v(
-                                    "\n                        Regenerate Recovery Codes\n                    "
+                                    "\n                        Renovar códigos de recuperación\n                    "
                                   )
                                 ]
                               )
@@ -27972,7 +27977,7 @@ var render = function() {
                                 { staticClass: "mr-3" },
                                 [
                                   _vm._v(
-                                    "\n                        Show Recovery Codes\n                    "
+                                    "\n                        Mostrar códigos de recuperación\n                    "
                                   )
                                 ]
                               )
@@ -27995,7 +28000,7 @@ var render = function() {
                             },
                             [
                               _vm._v(
-                                "\n                        Disable\n                    "
+                                "\n                        Deshabilitar\n                    "
                               )
                             ]
                           )
@@ -28041,7 +28046,7 @@ var render = function() {
       {
         key: "title",
         fn: function() {
-          return [_vm._v("\n        Update Password\n    ")]
+          return [_vm._v("\n        Actualizar contraseña\n    ")]
         },
         proxy: true
       },
@@ -28050,7 +28055,7 @@ var render = function() {
         fn: function() {
           return [
             _vm._v(
-              "\n        Ensure your account is using a long, random password to stay secure.\n    "
+              "\n        Asegura tu cuenta usando una contraseña difícil y larga.\n    "
             )
           ]
         },
@@ -28065,7 +28070,7 @@ var render = function() {
               { staticClass: "col-span-6 sm:col-span-4" },
               [
                 _c("jet-label", {
-                  attrs: { for: "current_password", value: "Current Password" }
+                  attrs: { for: "current_password", value: "Contraseña actual" }
                 }),
                 _vm._v(" "),
                 _c("jet-input", {
@@ -28098,7 +28103,7 @@ var render = function() {
               { staticClass: "col-span-6 sm:col-span-4" },
               [
                 _c("jet-label", {
-                  attrs: { for: "password", value: "New Password" }
+                  attrs: { for: "password", value: "Nueva contraseña" }
                 }),
                 _vm._v(" "),
                 _c("jet-input", {
@@ -28132,7 +28137,7 @@ var render = function() {
                 _c("jet-label", {
                   attrs: {
                     for: "password_confirmation",
-                    value: "Confirm Password"
+                    value: "Confirmar contraseña"
                   }
                 }),
                 _vm._v(" "),
@@ -28173,7 +28178,7 @@ var render = function() {
                 staticClass: "mr-3",
                 attrs: { on: _vm.form.recentlySuccessful }
               },
-              [_vm._v("\n            Saved.\n        ")]
+              [_vm._v("\n            Guardado.\n        ")]
             ),
             _vm._v(" "),
             _c(
@@ -28182,7 +28187,7 @@ var render = function() {
                 class: { "opacity-25": _vm.form.processing },
                 attrs: { disabled: _vm.form.processing }
               },
-              [_vm._v("\n            Save\n        ")]
+              [_vm._v("\n            Guardar\n        ")]
             )
           ]
         },
@@ -28219,7 +28224,7 @@ var render = function() {
       {
         key: "title",
         fn: function() {
-          return [_vm._v("\n        Profile Information\n    ")]
+          return [_vm._v("\n        Información de perfil\n    ")]
         },
         proxy: true
       },
@@ -28228,7 +28233,7 @@ var render = function() {
         fn: function() {
           return [
             _vm._v(
-              "\n        Update your account's profile information and email address.\n    "
+              "\n        Actualiza tu información de perfil y correo electrónico.\n    "
             )
           ]
         },
@@ -28250,9 +28255,7 @@ var render = function() {
                       on: { change: _vm.updatePhotoPreview }
                     }),
                     _vm._v(" "),
-                    _c("jet-label", {
-                      attrs: { for: "photo", value: "Photo" }
-                    }),
+                    _c("jet-label", { attrs: { for: "photo", value: "Foto" } }),
                     _vm._v(" "),
                     _c(
                       "div",
@@ -28316,7 +28319,7 @@ var render = function() {
                       },
                       [
                         _vm._v(
-                          "\n                Select A New Photo\n            "
+                          "\n                Seleccionar nueva foto\n            "
                         )
                       ]
                     ),
@@ -28336,7 +28339,7 @@ var render = function() {
                           },
                           [
                             _vm._v(
-                              "\n                Remove Photo\n            "
+                              "\n                Quitar foto\n            "
                             )
                           ]
                         )
@@ -28355,7 +28358,7 @@ var render = function() {
               "div",
               { staticClass: "col-span-6 sm:col-span-4" },
               [
-                _c("jet-label", { attrs: { for: "name", value: "Name" } }),
+                _c("jet-label", { attrs: { for: "name", value: "Nombre" } }),
                 _vm._v(" "),
                 _c("jet-input", {
                   staticClass: "mt-1 block w-full",
@@ -28381,7 +28384,9 @@ var render = function() {
               "div",
               { staticClass: "col-span-6 sm:col-span-4" },
               [
-                _c("jet-label", { attrs: { for: "email", value: "Email" } }),
+                _c("jet-label", {
+                  attrs: { for: "email", value: "Correo electrónico" }
+                }),
                 _vm._v(" "),
                 _c("jet-input", {
                   staticClass: "mt-1 block w-full",
@@ -28416,7 +28421,7 @@ var render = function() {
                 staticClass: "mr-3",
                 attrs: { on: _vm.form.recentlySuccessful }
               },
-              [_vm._v("\n            Saved.\n        ")]
+              [_vm._v("\n            Guardado.\n        ")]
             ),
             _vm._v(" "),
             _c(
@@ -28425,7 +28430,7 @@ var render = function() {
                 class: { "opacity-25": _vm.form.processing },
                 attrs: { disabled: _vm.form.processing }
               },
-              [_vm._v("\n            Save\n        ")]
+              [_vm._v("\n            Guardar\n        ")]
             )
           ]
         },

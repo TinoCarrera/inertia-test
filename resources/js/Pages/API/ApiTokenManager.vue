@@ -3,24 +3,24 @@
         <!-- Generate API Token -->
         <jet-form-section @submitted="createApiToken">
             <template #title>
-                Create API Token
+                Crear un Token API 
             </template>
 
             <template #description>
-                API tokens allow third-party services to authenticate with our application on your behalf.
+                Los tokens API permiten que los servicios de terceros se autentiquen con nuestra aplicación.
             </template>
 
             <template #form>
                 <!-- Token Name -->
                 <div class="col-span-6 sm:col-span-4">
-                    <jet-label for="name" value="Name" />
+                    <jet-label for="name" value="Nombre" />
                     <jet-input id="name" type="text" class="mt-1 block w-full" v-model="createApiTokenForm.name" autofocus />
                     <jet-input-error :message="createApiTokenForm.error('name')" class="mt-2" />
                 </div>
 
                 <!-- Token Permissions -->
                 <div class="col-span-6" v-if="availablePermissions.length > 0">
-                    <jet-label for="permissions" value="Permissions" />
+                    <jet-label for="permissions" value="Permisos" />
 
                     <div class="mt-2 grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div v-for="permission in availablePermissions">
@@ -35,11 +35,11 @@
 
             <template #actions>
                 <jet-action-message :on="createApiTokenForm.recentlySuccessful" class="mr-3">
-                    Created.
+                    Creado.
                 </jet-action-message>
 
                 <jet-button :class="{ 'opacity-25': createApiTokenForm.processing }" :disabled="createApiTokenForm.processing">
-                    Create
+                    Crear
                 </jet-button>
             </template>
         </jet-form-section>
@@ -51,11 +51,11 @@
             <div class="mt-10 sm:mt-0">
                 <jet-action-section>
                     <template #title>
-                        Manage API Tokens
+                        Administrar Tokens API 
                     </template>
 
                     <template #description>
-                        You may delete any of your existing tokens if they are no longer needed.
+                        Puedes eliminar cualquiera de tus tokens existentes si no los necesitas.
                     </template>
 
                     <!-- API Token List -->
@@ -68,17 +68,17 @@
 
                                 <div class="flex items-center">
                                     <div class="text-sm text-gray-400" v-if="token.last_used_at">
-                                        Last used {{ fromNow(token.last_used_at) }}
+                                        Último uso {{ fromNow(token.last_used_at) }}
                                     </div>
 
                                     <button class="cursor-pointer ml-6 text-sm text-gray-400 underline focus:outline-none"
                                                 @click="manageApiTokenPermissions(token)"
                                                 v-if="availablePermissions.length > 0">
-                                        Permissions
+                                        Permisos
                                     </button>
 
                                     <button class="cursor-pointer ml-6 text-sm text-red-500 focus:outline-none" @click="confirmApiTokenDeletion(token)">
-                                        Delete
+                                        Eliminar
                                     </button>
                                 </div>
                             </div>

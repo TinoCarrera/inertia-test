@@ -26476,7 +26476,7 @@ var render = function() {
           {
             key: "title",
             fn: function() {
-              return [_vm._v("\n            Create API Token\n        ")]
+              return [_vm._v("\n            Crear un Token API \n        ")]
             },
             proxy: true
           },
@@ -26485,7 +26485,7 @@ var render = function() {
             fn: function() {
               return [
                 _vm._v(
-                  "\n            API tokens allow third-party services to authenticate with our application on your behalf.\n        "
+                  "\n            Los tokens API permiten que los servicios de terceros se autentiquen con nuestra aplicación.\n        "
                 )
               ]
             },
@@ -26499,7 +26499,9 @@ var render = function() {
                   "div",
                   { staticClass: "col-span-6 sm:col-span-4" },
                   [
-                    _c("jet-label", { attrs: { for: "name", value: "Name" } }),
+                    _c("jet-label", {
+                      attrs: { for: "name", value: "Nombre" }
+                    }),
                     _vm._v(" "),
                     _c("jet-input", {
                       staticClass: "mt-1 block w-full",
@@ -26527,7 +26529,7 @@ var render = function() {
                       { staticClass: "col-span-6" },
                       [
                         _c("jet-label", {
-                          attrs: { for: "permissions", value: "Permissions" }
+                          attrs: { for: "permissions", value: "Permisos" }
                         }),
                         _vm._v(" "),
                         _c(
@@ -26636,7 +26638,7 @@ var render = function() {
                     staticClass: "mr-3",
                     attrs: { on: _vm.createApiTokenForm.recentlySuccessful }
                   },
-                  [_vm._v("\n                Created.\n            ")]
+                  [_vm._v("\n                Creado.\n            ")]
                 ),
                 _vm._v(" "),
                 _c(
@@ -26645,7 +26647,7 @@ var render = function() {
                     class: { "opacity-25": _vm.createApiTokenForm.processing },
                     attrs: { disabled: _vm.createApiTokenForm.processing }
                   },
-                  [_vm._v("\n                Create\n            ")]
+                  [_vm._v("\n                Crear\n            ")]
                 )
               ]
             },
@@ -26672,7 +26674,7 @@ var render = function() {
                           fn: function() {
                             return [
                               _vm._v(
-                                "\n                    Manage API Tokens\n                "
+                                "\n                    Administrar Tokens API \n                "
                               )
                             ]
                           },
@@ -26683,7 +26685,7 @@ var render = function() {
                           fn: function() {
                             return [
                               _vm._v(
-                                "\n                    You may delete any of your existing tokens if they are no longer needed.\n                "
+                                "\n                    Puedes eliminar cualquiera de tus tokens existentes si no los necesitas.\n                "
                               )
                             ]
                           },
@@ -26725,7 +26727,7 @@ var render = function() {
                                                 },
                                                 [
                                                   _vm._v(
-                                                    "\n                                    Last used " +
+                                                    "\n                                    Último uso " +
                                                       _vm._s(
                                                         _vm.fromNow(
                                                           token.last_used_at
@@ -26753,7 +26755,7 @@ var render = function() {
                                                 },
                                                 [
                                                   _vm._v(
-                                                    "\n                                    Permissions\n                                "
+                                                    "\n                                    Permisos\n                                "
                                                   )
                                                 ]
                                               )
@@ -26774,7 +26776,7 @@ var render = function() {
                                             },
                                             [
                                               _vm._v(
-                                                "\n                                    Delete\n                                "
+                                                "\n                                    Eliminar\n                                "
                                               )
                                             ]
                                           )
@@ -26792,7 +26794,7 @@ var render = function() {
                       ],
                       null,
                       false,
-                      822305792
+                      1382569948
                     )
                   })
                 ],
@@ -27106,7 +27108,7 @@ var render = function() {
                   staticClass:
                     "font-semibold text-xl text-gray-800 leading-tight"
                 },
-                [_vm._v("\n            API Tokens\n        ")]
+                [_vm._v("\n            Tokens API \n        ")]
               )
             ]
           },
@@ -28809,7 +28811,7 @@ var render = function() {
                   staticClass:
                     "font-semibold text-xl text-gray-800 leading-tight"
                 },
-                [_vm._v("\n            Team Settings\n        ")]
+                [_vm._v("\n            Ajustes de grupo\n        ")]
               )
             ]
           },
@@ -28894,7 +28896,7 @@ var render = function() {
                       fn: function() {
                         return [
                           _vm._v(
-                            "\n                Add Team Member\n            "
+                            "\n                Añadir miembro al grupo\n            "
                           )
                         ]
                       },
@@ -28905,7 +28907,7 @@ var render = function() {
                       fn: function() {
                         return [
                           _vm._v(
-                            "\n                Add a new team member to your team, allowing them to collaborate with you.\n            "
+                            "\n                Añade un nuevo miembro a tu grupo, permitiendo que colaboren contigo.\n            "
                           )
                         ]
                       },
@@ -28921,7 +28923,7 @@ var render = function() {
                               { staticClass: "max-w-xl text-sm text-gray-600" },
                               [
                                 _vm._v(
-                                  "\n                        Please provide the email address of the person you would like to add to this team. The email address must be associated with an existing account.\n                    "
+                                  "\n                        Coloca el correo electrónico de la persona que quieres añadir al grupo. El correo electrónico debe estar asociado con una cuenta existente.\n                    "
                                 )
                               ]
                             )
@@ -28932,7 +28934,10 @@ var render = function() {
                             { staticClass: "col-span-6 sm:col-span-4" },
                             [
                               _c("jet-label", {
-                                attrs: { for: "email", value: "Email" }
+                                attrs: {
+                                  for: "email",
+                                  value: "Correo electrónico"
+                                }
                               }),
                               _vm._v(" "),
                               _c("jet-input", {
@@ -28967,7 +28972,7 @@ var render = function() {
                                 { staticClass: "col-span-6 lg:col-span-4" },
                                 [
                                   _c("jet-label", {
-                                    attrs: { for: "roles", value: "Role" }
+                                    attrs: { for: "roles", value: "Rol" }
                                   }),
                                   _vm._v(" "),
                                   _c("jet-input-error", {
@@ -29145,7 +29150,7 @@ var render = function() {
                   ],
                   null,
                   false,
-                  3499722024
+                  593608948
                 )
               })
             ],

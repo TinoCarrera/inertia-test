@@ -6,30 +6,30 @@
             <!-- Add Team Member -->
             <jet-form-section @submitted="addTeamMember">
                 <template #title>
-                    Add Team Member
+                    Añadir miembro al grupo
                 </template>
 
                 <template #description>
-                    Add a new team member to your team, allowing them to collaborate with you.
+                    Añade un nuevo miembro a tu grupo, permitiendo que colaboren contigo.
                 </template>
 
                 <template #form>
                     <div class="col-span-6">
                         <div class="max-w-xl text-sm text-gray-600">
-                            Please provide the email address of the person you would like to add to this team. The email address must be associated with an existing account.
+                            Coloca el correo electrónico de la persona que quieres añadir al grupo. El correo electrónico debe estar asociado con una cuenta existente.
                         </div>
                     </div>
 
                     <!-- Member Email -->
                     <div class="col-span-6 sm:col-span-4">
-                        <jet-label for="email" value="Email" />
+                        <jet-label for="email" value="Correo electrónico" />
                         <jet-input id="name" type="text" class="mt-1 block w-full" v-model="addTeamMemberForm.email" />
                         <jet-input-error :message="addTeamMemberForm.error('email')" class="mt-2" />
                     </div>
 
                     <!-- Role -->
                     <div class="col-span-6 lg:col-span-4" v-if="availableRoles.length > 0">
-                        <jet-label for="roles" value="Role" />
+                        <jet-label for="roles" value="Rol" />
                         <jet-input-error :message="addTeamMemberForm.error('role')" class="mt-2" />
 
                         <div class="mt-1 border border-gray-200 rounded-lg cursor-pointer">

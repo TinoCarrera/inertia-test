@@ -2,7 +2,7 @@
     <app-layout>
         <template #header>
             <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-                Ajustes de grupo
+                Ajustes del grupo
             </h2>
         </template>
 

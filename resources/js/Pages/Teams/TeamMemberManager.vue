@@ -59,11 +59,11 @@
 
                 <template #actions>
                     <jet-action-message :on="addTeamMemberForm.recentlySuccessful" class="mr-3">
-                        Added.
+                        Añadido.
                     </jet-action-message>
 
                     <jet-button :class="{ 'opacity-25': addTeamMemberForm.processing }" :disabled="addTeamMemberForm.processing">
-                        Add
+                        Añadir
                     </jet-button>
                 </template>
             </jet-form-section>
@@ -75,11 +75,11 @@
             <!-- Manage Team Members -->
             <jet-action-section class="mt-10 sm:mt-0">
                 <template #title>
-                    Team Members
+                    Miembros del grupo
                 </template>
 
                 <template #description>
-                    All of the people that are part of this team.
+                    Todos los miembros que son parte del grupo.
                 </template>
 
                 <!-- Team Member List -->
@@ -107,14 +107,14 @@
                                 <button class="cursor-pointer ml-6 text-sm text-red-500 focus:outline-none"
                                                     @click="confirmLeavingTeam"
                                                     v-if="$page.user.id === user.id">
-                                    Leave
+                                    Abandonar
                                 </button>
 
                                 <!-- Remove Team Member -->
                                 <button class="cursor-pointer ml-6 text-sm text-red-500 focus:outline-none"
                                                     @click="confirmTeamMemberRemoval(user)"
                                                     v-if="userPermissions.canRemoveTeamMembers">
-                                    Remove
+                                    Eliminar
                                 </button>
                             </div>
                         </div>

@@ -1,41 +1,41 @@
 <template>
     <jet-action-section>
         <template #title>
-            Delete Team
+            Eliminar grupo
         </template>
 
         <template #description>
-            Permanently delete this team.
+            Eliminar permanentemente este grupo.
         </template>
 
         <template #content>
             <div class="max-w-xl text-sm text-gray-600">
-                Once a team is deleted, all of its resources and data will be permanently deleted. Before deleting this team, please download any data or information regarding this team that you wish to retain.
+                Una vez eliminado el grupo, todos los datos serán eliminados permanentemente. Antes de eliminarlo, por favor guarda cualquier dato o información del grupo que quieras mantener.
             </div>
 
             <div class="mt-5">
                 <jet-danger-button @click.native="confirmTeamDeletion">
-                    Delete Team
+                    Eliminar grupo
                 </jet-danger-button>
             </div>
 
             <!-- Delete Team Confirmation Modal -->
             <jet-confirmation-modal :show="confirmingTeamDeletion" @close="confirmingTeamDeletion = false">
                 <template #title>
-                    Delete Team
+                    Eliminar grupo
                 </template>
 
                 <template #content>
-                    Are you sure you want to delete this team? Once a team is deleted, all of its resources and data will be permanently deleted.
+                    ¿Estás seguro que quieres eliminar este grupo? Una vez eliminado, todos los datos serán eliminados permanentemente.
                 </template>
 
                 <template #footer>
                     <jet-secondary-button @click.native="confirmingTeamDeletion = false">
-                        Nevermind
+                        Volver
                     </jet-secondary-button>
 
                     <jet-danger-button class="ml-2" @click.native="deleteTeam" :class="{ 'opacity-25': form.processing }" :disabled="form.processing">
-                        Delete Team
+                        Eliminar grupo
                     </jet-danger-button>
                 </template>
             </jet-confirmation-modal>

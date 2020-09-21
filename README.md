@@ -1,1 +1,1 @@
-# Prueba con Inertia.js
+# Laravel Jetstream con Inertia

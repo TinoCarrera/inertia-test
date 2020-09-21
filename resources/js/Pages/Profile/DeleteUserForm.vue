@@ -29,7 +29,7 @@
                     ¿Estás seguro que quieres eliminar tu cuenta? Una vez eliminada la cuenta, todos los datos serán eliminados permanentemente. Por favor introduce tu contraseña para confirmar que quieres eliminar tu cuenta permanentemente.
 
                     <div class="mt-4">
-                        <jet-input type="password" class="mt-1 block w-3/4" placeholder="Password"
+                        <jet-input type="password" class="mt-1 block w-3/4" placeholder="Contraseña"
                                     ref="password"
                                     v-model="form.password"
                                     @keyup.enter.native="deleteUser" />

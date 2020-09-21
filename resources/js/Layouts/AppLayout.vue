@@ -17,6 +17,9 @@
                             <jet-nav-link href="/dashboard" :active="$page.currentRouteName == 'dashboard'">
                                 Página principal
                             </jet-nav-link>
+                            <jet-nav-link href="/users" :active="$page.currentRouteName == 'users'">
+                                Usuarios
+                            </jet-nav-link>
                         </div>
                     </div>
 
@@ -110,6 +113,9 @@
                 <div class="pt-2 pb-3 space-y-1">
                     <jet-responsive-nav-link href="/dashboard" :active="$page.currentRouteName == 'dashboard'">
                         Página principal
+                    </jet-responsive-nav-link>
+                    <jet-responsive-nav-link href="/users" :active="$page.currentRouteName == 'users'">
+                        Usuarios
                     </jet-responsive-nav-link>
                 </div>
 

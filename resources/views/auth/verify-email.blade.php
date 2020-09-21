@@ -20,7 +20,7 @@
 
                 <div>
                     <x-jet-button type="submit">
-                        {{ __('Resend Verification Email') }}
+                        {{ __('Reenviar correo de verificación') }}
                     </x-jet-button>
                 </div>
             </form>
@@ -29,7 +29,7 @@
                 @csrf
 
                 <button type="submit" class="underline text-sm text-gray-600 hover:text-gray-900">
-                    {{ __('Logout') }}
+                    {{ __('Salir') }}
                 </button>
             </form>
         </div>

@@ -5,10 +5,12 @@
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex justify-between h-16">
                     <div class="flex">
-                        <!-- Logo -->
+
                         <div class="flex-shrink-0 flex items-center">
                             <a href="/dashboard">
-                                <jet-application-mark class="block h-9 w-auto" />
+                                <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+                                    LuxApp
+                                </h2>
                             </a>
                         </div>
 
